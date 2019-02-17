@@ -46,7 +46,6 @@
     "sass-loader": "^7.1.0",
     "semver": "5.6.0",
     "style-loader": "0.19.1",
-    "vue-docgen-api": "^3.5.0",
     "vue-jest": "3.0.2",
     "vue-loader": "15.5.1",
     "vue-styleguidist": "3.0.13",
