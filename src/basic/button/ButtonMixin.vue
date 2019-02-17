@@ -8,9 +8,11 @@
 
 <script>
 	// You can also use 'exports.default = {}' style module exports.
-	export default {
-		props: {
+	import Themeable from "mixins/Themeable";
 
+	export default {
+		mixins: [Themeable],
+		props: {
 			test: [String, Boolean],
 
 			/**

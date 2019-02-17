@@ -1,4 +1,5 @@
 const vueLoader = require('vue-loader');
+const path = require('path');
 
 
 const ignoreDirs = source => {
@@ -14,6 +15,7 @@ module.exports = {
 		resolve: {
 			alias: {
 				"node_modules": '~',
+				"mixins": path.resolve(__dirname, "src/mixins/")
 			},
 			modules: [
 				'src',
