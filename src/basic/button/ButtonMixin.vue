@@ -30,8 +30,29 @@
 		},
 		methods: {
 			pushButton() {
+				/**
+				 * Success event.
+				 *
+				 * @event success
+				 * @type {object}
+				 */
+				this.$emit('success', {
+					demo: 'example'
+				});
+
+				const eventError = 'error';
+				/**
+				 * Success event.
+				 *
+				 * @event success
+				 * @type {object}
+				 */
+				this.$emit(eventError, {
+					demo: 'example'
+				});
+
 				this.numClicks += 1;
-				this.dogName = dogNames[this.numClicks];
+				//this.dogName = dogNames[this.numClicks];
 			}
 		}
 	}
