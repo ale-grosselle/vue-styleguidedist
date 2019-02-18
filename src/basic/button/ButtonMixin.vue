@@ -10,6 +10,9 @@
 	// You can also use 'exports.default = {}' style module exports.
 	import Themeable from "mixins/Themeable";
 
+
+	const DEFAULT = "FULL";
+
 	export default {
 		mixins: [Themeable],
 		props: {
@@ -21,7 +24,7 @@
 			 */
 			kind: {
 				type: [String, Boolean],
-				default: "FULL",
+				default: DEFAULT,
 				validator: (kind) => true
 			}
 		},
