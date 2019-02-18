@@ -44,7 +44,7 @@
 				/**
 				 * Success event.
 				 *
-				 * @event success
+				 * @event error
 				 * @type {object}
 				 */
 				this.$emit(eventError, {
