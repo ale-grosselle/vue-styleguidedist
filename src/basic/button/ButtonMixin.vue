@@ -9,6 +9,7 @@
 <script>
 	// You can also use 'exports.default = {}' style module exports.
 	import Themeable from "mixins/Themeable";
+	import EventsEnum from "basic/EventsEnum";
 
 
 	const DEFAULT = "FULL";
@@ -43,14 +44,13 @@
 					demo: 'example'
 				});
 
-				const eventError = 'error';
 				/**
 				 * Success event.
 				 *
 				 * @event error
 				 * @type {object}
 				 */
-				this.$emit(eventError, {
+				this.$emit(EventsEnum.error, {
 					demo: 'example'
 				});
 
